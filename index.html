@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DracDictionary</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="navbar-brand">Dracula Flow Dictionary</div>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="navbar-toggle">☰</button>
+    </nav>
+    <button id="toggle-columns-button">Show Episodes</button>
+    <div class="episodes hidden" id="episodes-container">
+        <div class="episode" id="episode1" onclick="toggleList('episode1-list')">Dracula Flow 1</div>
+        <div class="episode" id="episode2" onclick="toggleList('episode2-list')">Dracula Flow 2</div>
+        <div class="episode" id="episode3" onclick="toggleList('episode3-list')">Dracula Flow 3</div>
+        <div class="episode" id="episode4" onclick="toggleList('episode4-list')">Dracula Flow 4</div>
+        <div class="episode" id="episode5" onclick="toggleList('episode5-list')">Dracula Flow 5</div>
+    </div>
+    
+    <div class="episode-list" id="episode1-list">
+        <h2>Dracula Flow 1</h2>
+        <ul>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A &quot;brick&quot; is a brick-shaped package of cocaine or some other drug, typically amounting to 36 ounces. Dracula is warning others of his power and status because he started off with one single &quot;brick&quot; and turned it into an entire drug empire.">
+                    1. Flipped a whole brick into an empire, stop playin' with me
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula emphasizes his lack of loyalty to anyone, portraying his ruthless and independent nature. He makes it clear that he operates alone and trusts no one.">
+                    2. I have no loyalty for anyone, never did, never will
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula embraces his unsympathetic demeanor, stating that he thrives in a life of crime, chaos, and power. This line reflects his cold-hearted approach to his empire.">
+                    3. I have no sympathy, I live for this shit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="By saying he&apos;s &quot;nice with it,&quot; Dracula is boasting about his skill and efficiency, whether in crime, manipulation, or survival. This is a statement of confidence and mastery.">
+                    4. I'm nice with it, haha
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula reiterates his disloyalty and refers to himself as a &quot;demon,&quot; symbolizing his ruthless and cunning nature. He thrives on destruction and chaos.">
+                    5. I'm not loyal to anybody, I'm a demon
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This phrase compares Dracula&apos;s relentless and violent approach to &quot;getting it back in blood&quot; — a metaphor for revenge or taking back what is his, no matter the cost.">
+                    6. Movin' like Dracula, we get it back in blood
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula boasts about his wealth, describing how his money is long-lasting and extensive, implying his financial dominance and power.">
+                    7. My money long, my pockets deep
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula compares his wealth to James Cameron, the successful director known for blockbuster films like &quot;Avatar&quot; and &quot;Titanic,&quot; which made billions of dollars.">
+                    8. My money longer than James Cameron
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula emphasizes that he doesn&apos;t allow &quot;pocket watching,&quot; meaning others aren&apos;t allowed to monitor or critique his financial gains.">
+                    9. No pocket watchin' in these parts
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula likens his actions on and off the court to basketball fundamentals, suggesting he adheres to a strict and focused code of efficiency and strategy in all aspects of life.">
+                    10. On and off the court, straight fundamentals, no funny business
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula refers to his romantic partner&apos;s choice to be with him despite his dangerous and chaotic nature, further solidifying his allure and influence.">
+                    11. Shorty chose to be with a demon
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula references a partner who had a Brazilian Butt Lift (BBL) removed because it limited her ability to run, symbolizing the sacrifices made to adapt to his chaotic lifestyle.">
+                    12. Shorty got a BBL, took that shit out because she couldn't run
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This phrase reflects Dracula&apos;s lack of concern for others&apos; issues. By saying &quot;sounds like her problem,&quot; he dismisses responsibility for anything outside his personal goals.">
+                    13. Sounds like her problem to me, haha
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula mentions &quot;smokin&apos; runtz,&quot; a popular strain of cannabis, to highlight his indulgent lifestyle and affinity for luxury.">
+                    14. We smokin' runtz
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula describes his intense and focused lifestyle, where he &quot;cuts straight to the bricks,&quot; referring to direct and serious business without any distractions.">
+                    15. We straight gassin', cuttin' straight to the bricks, haha
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This phrase is a declaration of Dracula&apos;s confidence and accomplishments, claiming that his actions and achievements speak for themselves — he is the ultimate figure of success.">
+                    16. You see it, I really do this, I'm really him
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula dismisses his efforts and achievements as insignificant to him, reflecting his nonchalant attitude toward his incredible power and success.">
+                    17. This shit ain't nothin' to me, man
+                </a>
+            </li>
+            
+            <!-- Add more phrases -->
+        </ul>
+    
+        <hr class="divider">
+        <footer class="footer">
+            <p>dracula flow 1 Copyright 2023.</p>
+            <p>No claim to copyright ownership is made to underlying materials
+            originating with PLUMMCORP RECORDS , including dracula flow 1-5</p> 
+            <p>Important: Please review the legal disclaimer and feedback page</p>
+        </footer>
+    </div>
+
+    <div class="episode-list" id="episode2-list">
+        <h2>Dracula Flow 2</h2>
+        <ul>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula refers to being overwhelmed by someone’s physical allure while referencing 'Danny Phantom,' a character known for disappearing acts, symbolizing fleeting encounters.">
+                    1. Ass so fat, I'm peakin' off this Danny Phantom, slime
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This line shows Dracula's existential crisis as he reflects on his identity and power amidst the chaos he thrives in.">
+                    2. Can you remind me who I am?
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="The 'Chanel optics' reference highlights his luxury lifestyle and heightened perception, seeing the world through a lens of extravagance.">
+                    3. Chanel optics got me seein' shit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This line emphasizes Dracula's admiration for indulgence, celebrating physical attraction with playful irreverence.">
+                    4. That coochie doin' it for me, slime
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Reiterating his admiration, Dracula's word choice makes this line humorous while maintaining the underlying theme of indulgence.">
+                    5. That coochie yummy, slime
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This provocative statement reflects Dracula's unconventional and rebellious preferences, amplifying his dark humor.">
+                    6. That pussy better stank, otherwise I don't want it
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="The phrase combines Dracula's indulgence in pleasure and substances, highlighting a surreal and hedonistic lifestyle.">
+                    7. That pussy dulce, smokin' fentanyl-laced cereal milk, I see God
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula humorously exaggerates his physical and emotional reactions, showing his passionate and chaotic personality.">
+                    8. That pussy got me screamin', cryin', pissin', shittin', shootin' ropes
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This phrase shows Dracula's relentless comeback after opposition, reinforcing his demon-like resilience.">
+                    10. They thought they could stop a demon, I'm back
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula dismisses his achievements as insignificant to him, underscoring his casual dominance.">
+                    11. This shit ain't nothin' to me, man
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Cloud seeding refers to manipulation and control, emphasizing Dracula's far-reaching influence and power.">
+                    12. We out here cloud seedin', the scope gleamin'
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="The 'meat cannon' is a humorous exaggeration, with 'shootin' straight rope' adding a cheeky, irreverent tone.">
+                    13. When I got the meat cannon, I be shootin' straight rope
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula mentions 'Pirate Bay' as a metaphor for acquiring illegal wealth, blending sci-fi elements with dark humor.">
+                    14. Yeah, we gettin' that Pirate Bay, alien shish kabob, cordyceps money
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This phrase is a bold declaration of Dracula's superiority and invincibility in any domain.">
+                    15. Y'all can't fuck with me
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula admits his untrustworthy nature, adding a layer of introspection and vulnerability to his character.">
+                    16. You can't trust me, I don't even trust myself
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula grapples with his identity, overwhelmed by the wealth and chaos he thrives in.">
+                    17. I don't even know who I am anymore, I'm gettin' too much money
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula humorously hopes for alien existence, not for exploration, but for unexpected and wild desires.">
+                    18. I hope them aliens are real, so that I have more things to fuck
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This surreal statement combines humor and absurdity, reflecting Dracula's unpredictable and chaotic nature.">
+                    19. I just popped a whole garbanzo bean, fuck you mean?
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula boldly proclaims his need for fentanyl, emphasizing his unrestrained lifestyle and indulgence.">
+                    20. I need fentanyl, slime
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This is a declaration of Dracula's confidence in his enduring identity and dominance.">
+                    21. I'm him, I been him, I will continue to be him
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This provocative statement blends dark humor and surreal imagery, highlighting Dracula's chaotic personality.">
+                    22. I'm in a k-hole lickin' balloon knot
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula indulges in hedonistic activities, referencing 'Perc 30' as part of his chaotic and exaggerated lifestyle.">
+                    23. Popped a Perc 30, got straight to fuckin'
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula blends sci-fi and cannabis culture, referencing 'Qui-Gon Jinn' and 'Phillips-head runtz' humorously.">
+                    24. Smokin' the Qui-Gon Jinn, Vietnamese, Phillips-head runtz
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="The phrase humorously ties indulgence in cannabis ('zaza') to speaking Esperanto, emphasizing surreal effects.">
+                    25. The zaza got me speakin' Esperanto
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula humorously describes the appearance of yellow rubies, likening them to mundane but striking visuals.">
+                    26. Yellow rubies glistenin', like piss
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This absurd statement reflects Dracula's chaotic and hedonistic lifestyle, using sea monkeys as a bizarre metaphor.">
+                    27. Gulpin' sea monkeys by the gallon, my tummy feel crazy
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Dracula humorously demands action from the highest authority, exaggerating his sense of importance.">
+                    28. Get the president on the phone now
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This surreal line highlights Dracula's chaotic and irreverent humor, invoking Blac Chyna in an absurd context.">
+                    29. Hello? Blac Chyna?
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="This line reflects Dracula's business dealings and his focus on collecting debts, showcasing his assertive nature.">
+                    30. I fronted him a brick, I need my money
+                </a>
+            </li>
+            
+         <!-- Add more phrases -->
+        </ul>
+
+        <hr class="divider">
+        <footer class="footer">
+            <p>dracula flow 2 Copyright 2023.</p>
+            <p>No claim to copyright ownership is made to underlying materials
+            originating with PLUMMCORP RECORDS , including dracula flow 1-5</p> 
+            <p>Important: Please review the legal disclaimer and feedback page</p>
+        </footer>
+    </div>
+
+    <div class="episode-list" id="episode3-list">
+        <h2>Dracula Flow 3</h2>
+        <ul>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A blunt dismissal, emphasizing total apathy.">
+                    1. Ask me if I care about this shit, cause I don't give a shit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous boast, equating intense effort or success to being part of something indispensable.">
+                    2. I balled so hard they thought I was a fuckin' nutsack
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="An exaggeration of wealth or disregard for expense, symbolizing financial freedom.">
+                    3. Don't give a fuck if I go blind, I don't need to see the price tag anyways.
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A surreal flex, comparing achievements to historical and mystical milestones.">
+                    4. I have seen the Magna Carta, I've seen the Eye of Horus
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A mix of absurd humor and surreal imagery, possibly mocking indulgence.">
+                    5. I'm bitin' the fart bubbles in the bath, we smokin' Symbiotes
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A wild and chaotic statement blending action-movie energy with outrageous intent.">
+                    6. I'm high on twelve Jason Bournes, lookin' to beat the cum out of a thick, fresh hoe
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A simple declaration of being unique or operating on another level.">
+                    7. I'm movin' different
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Mimicking French Montana’s ad-lib to humorously highlight confidence or confusion.">
+                    8. I'm movin' like French Montana, 'Hah?'
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A darkly comedic reference to destructive potential or intelligence.">
+                    9. I'm movin' like Oppenheimer
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A clever, dismissive retort emphasizing indifference.">
+                    10. If I had a dollar for every time they said I gave a shit, I'd be broke cause I don't give a shit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous threat implying wealth and fashion as tools of vengeance.">
+                    11. Last guy who ran off on the pack got choked out by some Givenchy gloves
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A crude metaphor likening intimacy to being trapped in an immersive, inescapable experience.">
+                    12. Call that pussy The Matrix because I'm in this bitch and I can't get out
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A mix of luxury and smoking culture, blending high fashion with indulgence.">
+                    13. That Burberry Backwoods pack hittin'
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful, extravagant compliment likening intimacy to a smooth, indulgent treat.">
+                    14. That pussy feel like Biscoff butter
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="An absurd metaphor comparing attraction to the raw power of a muscle car engine.">
+                    15. That pussy smell like a Hellcat V8
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A surreal and exaggerated statement blending indulgence, danger, and divinity.">
+                    16. That pussy dulce, smokin' fentanyl-laced cereal milk, I see God
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A darkly humorous take on someone’s obsession with wealth being their downfall.">
+                    17. The last thing he ever saw was the price tag on them
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful reference to smoking making someone feel worldly or nonsensical.">
+                    18. The zaza got me speakin' Esperanto
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A confident reminder of one's importance or capabilities.">
+                    19. They must have amnesia, they forgot that I'm him
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A simple assertion of ease or confidence.">
+                    20. This shit ain't nothin' to me, man
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A dramatic warning about consequences for defiance or missteps.">
+                    21. Step the wrong way and you will perish
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A bizarre and exaggerated description of a surreal dance moment.">
+                    22. She dropped that ass on me from an egregarious angle, they thought I was Steven Wallace
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A nonsensical yet entertaining mix of absurd smoking references.">
+                    23. Smokin' that Whoopi Goldberg, south Egyptian, Furburger deluxe, Mega Millions scratcher, skunk, Bubba kush
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A completely absurd and humorous statement.">
+                    24. Smokin' dung beetle
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A surreal and exaggerated metaphor for indulgence.">
+                    25. We smokin' shit in a glass pipe, blowin' the Lord's bubble
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous, surreal description of something exotic or ridiculous.">
+                    26. We smokin' sequoia banshee boogers
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Another absurd, exaggerated description of indulgence.">
+                    27. We snortin' that good buffalo soldier, tamarind, Jordanian jibbies
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A wildly vulgar, absurd flex pushing boundaries of shock humor.">
+                    28. Welcome to the cream kingdom, bitch, open up Blac Chyna, I'd drink her piss out of another man's balls
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A confident, cryptic statement with surreal imagery.">
+                    29. We out here cloud seedin', the scope gleamin'
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A straightforward call for respect or seriousness.">
+                    30. Y'all gotta stop playin' with me, man
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A dismissive boast about wealth aimed at someone inexperienced.">
+                    31. You ain't seen ten bands in your life, jit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A rhetorical question emphasizing complete disinterest.">
+                    32. You think I care about this shit?
+                </a>
+            </li>
+            
+          <!-- Add more phrases -->
+        </ul>
+        <hr class="divider">
+        <footer class="footer">
+            <p>dracula flow 3 Copyright 2023.</p>
+            <p>No claim to copyright ownership is made to underlying materials
+            originating with PLUMMCORP RECORDS , including dracula flow 1-5</p> 
+            <p>Important: Please review the legal disclaimer and feedback page</p>
+        </footer>
+    </div>
+
+    <div class="episode-list" id="episode4-list">
+        <h2>Dracula Flow 4</h2>
+        <ul>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A statement of complete indifference, highlighting a lack of concern for others' opinions.">
+                    1. Ask me if I care about this shit, cause I don't give a shit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A crass, exaggerated flex, showing off material wealth and sexual bravado.">
+                    2. Beatin' off to my Chrome Hearts boots
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A reckless and chaotic act, highlighting excessive drug use and impulsive buying.">
+                    3. Blacked out on the Percocet, ordered a Desert Eagle off Amazon
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A vulgar and demeaning act, showing a disregard for respect or boundaries.">
+                    4. Bitch so bad I made her shit in my chopped cheese
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A crude metaphor implying intense smoking, with a focus on excessive or absurdity.">
+                    5. Blowing bareback asshole, out-smokin' aqueduct filtered sherm
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A strange metaphor, mixing gaming and casual slang, possibly implying betrayal.">
+                    6. Boy ran off with a Banjo-Kazooie
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="An expression of luxurious fashion, where high-end shoes are seen as valuable and living organisms.">
+                    7. Bottegas have veins pumpin' through them
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous reference to someone attempting to steal something of value from the speaker.">
+                    8. Caught a broke boy trying to come up on my Amazon package
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A metaphor for being trapped in a situation that’s both seductive and restrictive.">
+                    9. Call that pussy The Matrix because I'm in this bitch and I can't get out
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A violent action, emphasizing power and dominance with an accessory.">
+                    10. Choked his goofy ass out with a B.B. Simon belt
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="An exaggerated and absurd description of an intense cough, highlighting physical pain or difficulty.">
+                    11. Cough so fucking hard I started passing kidney stones
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="Repetition for emphasis of the violent action mentioned earlier with the same accessory.">
+                    12. Choked his goofy ass out with a B.B. Simon belt
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful yet crude metaphor, implying an intimate relationship without any barriers or restrictions.">
+                    13. Dick/pussy freeballin', like Shaq and Kobe
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A crude, humorous comment about someone’s sexual preferences or appearance.">
+                    14. Don't be shy, girl, I love me some pastrami mud flaps
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A darkly humorous comment, implying smoking is so extreme it’s a form of defiance.">
+                    15. Every puff is an insult to God
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A crude metaphor, implying intense attraction and desperation for physical closeness.">
+                    16. Face pressed up against that monkey, sniffin' for dear life
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A cryptic expression, implying the speaker’s willingness to engage in dark or intense actions.">
+                    17. Fuck it, I ate the opp
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A motivational phrase, encouraging someone to go out and make money.">
+                    18. Go outside and get a bag!
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous reference to being overly intoxicated or out of control due to a potent substance.">
+                    19. Zaza got me in a state of rigor mortis
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous exaggeration, implying that a firearm caused someone’s fear or panic.">
+                    20. Glock-34 shivered his timbers
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="An absurd reference to a decadent combination of food and smoking.">
+                    21. Hidden Valley Ranch ice cream cake in my Fronto Leaf
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A threat about inflicting harm while showing off expensive or intimidating fashion.">
+                    22. I can't wait to curb stomp you in these dumb ugly ass Rick Owens shoes
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A boast about family legacy, implying that luxury and power are ingrained.">
+                    23. I come from a long bloodline of Italian leather
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A cryptic statement about one's determined or driven nature.">
+                    24. I'm coming for every enzyme
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful flex about an ancient or almost mythical level of greatness or endurance.">
+                    25. I'm Dracula, I'm twelve million years old
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A casual expression of being intoxicated with a touch of humor.">
+                    26. I'm fucked up drinking a Chinese modelo
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A reference to mindlessly enjoying the environment or music.">
+                    27. I'm fucked up in the crib listening to Trill Sammy
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A metaphor for making something good or satisfying out of an intimate encounter.">
+                    28. I make a nice stew out of that pussy
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A strange or humorous comment about self-dealing or an unusual experience.">
+                    29. I sold crack to myself
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A clever remark about pushing limits while still holding back at the same time.">
+                    30. I took two limitless pills to limit myself
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A craving or desire for a specific drug, possibly implying addiction.">
+                    31. I need my percs!
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous statement about craving a rare or potent form of drug.">
+                    32. I need more sequoia banshee boogers
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A brag about having many weapons, implying strength or readiness.">
+                    33. I got more sticks than a fucking forest
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A boast about wealth and success, comparing it to Midas’ golden touch.">
+                    34. I got Midas touch, fuck boy
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous, exaggerated metaphor implying complexity or high technology in a casual item.">
+                    35. I got strands of RNA in my hookah
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A cryptic phrase implying that the speaker is moving in a successful or business-savvy way.">
+                    36. I'm moving lucrative
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful, exaggerated comment about an unconventional or absurd item being smoked.">
+                    37. I'm smoking lizard taint
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A statement of confidence, suggesting the speaker is highly skilled or effective.">
+                    38. I really do this shit
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A vulgar, bizarre statement about a holiday figure in a humorous, explicit manner.">
+                    39. If Santa come down my chimney, I'm gon' fuck him
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful reference to a popular show and an exaggerated form of relaxation or indulgence.">
+                    40. I'm smoking that good schooby-doo waa
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A surreal and exaggerated reference to advanced technology or something high-tech being smoked.">
+                    41. I'm smoking that IBM Quantum Computer
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful metaphor for quickly consuming drugs in a reckless way.">
+                    42. I slurped the Percs off the plate, like a pinto bean
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A humorous, absurd statement about drug use from various places.">
+                    43. I'm snortin' that good buffalo soldier, tamarind, Jordanian jibbies
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A cryptic, intense statement implying focus or intensity.">
+                    44. I'll give you that fluoride stare
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A dark, ominous threat showing extreme aggression.">
+                    45. I'll fucking kill you
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A confident statement about personal change or distinctiveness.">
+                    46. I'm movin' different
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A tragic story about drug abuse and its consequences on youth.">
+                    47. Lil' bro was emaciated, the Percs done ate lil' cuzzo ass up
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A metaphor for destruction or overwhelming action, referencing historical disaster.">
+                    48. Turned his city into Pompeii
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A threatening warning implying death for anyone who crosses a certain boundary.">
+                    49. Step the wrong way and you will perish
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A playful but somewhat disrespectful phrase implying a sexual experience.">
+                    50. Told shorty to keep that box breathin' yeah
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A statement of disinterest or lack of significance in the speaker’s actions.">
+                    51. This shit ain't nothin' to me, man!
+                </a>
+            </li>
+            <li>
+                <a href="#" class="popup-trigger" data-text="A strange and vulgar statement about physical closeness during intimacy.">
+                    52. When I hit it from behind, the room smells like absolute michi
+                </a>
+            </li>
+            
+        </ul>
+        <!--<footer class="copyright">dracula flow 4 Copyright 2023</footer>-->
+        <hr class="divider">
+        <footer class="footer">
+            <p>dracula flow 4 Copyright 2023.</p>
+            <p>No claim to copyright ownership is made to underlying materials
+            originating with PLUMMCORP RECORDS , including dracula flow 1-5</p> 
+            <p>Important: Please review the legal disclaimer and feedback page</p>
+        </footer>
+    </div>
+
+    <div class="episode-list" id="episode5-list">
+        <h2>Dracula Flow 5</h2>
+        <ul>
+            <li><a href="#" class="popup-trigger" data-text="">1. How can I be homophobic? I blew his fucking brains out.</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">2. This Luger will send a Christian to Hell</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">3. Shorty looks so good I used her piss as crab boil</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">4. Nutted so crazy I got 108° fever</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">5. Smoking on Congolese Dick Wick looking for a signal</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">6. I went dark a long time ago</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">7. Packed her asshole so tight she pushed out a pearl</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">8. The fentanyl got me moving like a claymation figure</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">9. Real premium French scatatouille</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">10. Money longer than KD's feet</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">11. Started off shooting dice in the cum slum</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">12. This shit ain't nothing to mе, man</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">13. I fuck like it's for survival, as if it's the last sip of water I'll еver get</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">14. Ribs visible, eyes bloodshot, thrusting away</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">15. Got my cob looking like Mexican street corn</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">16. I'm so violent and sick in the head</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">17. I can't tell if I want to kill my opps or fuck 'em</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">18. Zaza got me feeling like everything gonna be alright</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">19. Got the registered God Particle on my hip</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">20. Ready to have some hickory smoked opp</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">21. Wiped the nut on my AMIRI jeans and got right back to fuckin' work</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">22. Sipping on McDonald's house red</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">23. I have no morals or belief system</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">24. I have no spirituality or anything that gives my life meaning or structure</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">25. They asked me to shoot, I do it</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">26. I have no character</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">27. Home girl got a nice little turd cutter on her</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">28. Put a bag over his head and sent him to paradise</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">29. The Xan Francisco got me looking and moving like Mr. Bean, I ain't saying shit</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">30. Got a ruptured eardrum from having my ear to the streets for so fucking long</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">31. On a full moon I'll fuck anything</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">32. I'm smoking on that Sumerian Quasimodo carpet bomber obsequious demon whisperer runts</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">33. Pussy boy wanted beef with me over galactic acquisition</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">34. Called his mistress over and put 10 inches on her forehead like Payton Manning</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">35. I'm a street creature</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">36. The weed will have you in purgatory, screaming for eternity</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">37. You will relive every key mistake you've ever made in your life</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">38. I was in the Maybach gripping the stem</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">39. Hit the gelato papaya, took a sip of the Jose, everything turned red for 8 minutes</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">40. Destroyed his bando with a solar flare</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">41. I'm in the club listening to the brown note</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">42. My dogs will do anything for a Newport, and I mean anything</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">43. They think I'm homosexual the way I'm chasing the sack</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">44. Whippets left me with a drool and a shit-eating grin</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">45. My bitch look like Timothée Chalamet</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">46. I'm a product of the gutter</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">47. I fried up some corn snake for the cuzzos</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">48. The Zaza got me talking like Pingu</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">49. I'm the real goliath grouper</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">50. I'mma need you to suck the pigmentation out of this one, young blood</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">51. Shorty ass so fat I thought I was balls deep in Kyle Lowry</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">52. I only handed back the free world cause' I was bored</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">53. This blunt is overwhelmingly large</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">54. This blunt has a pulse</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">55. This blunt looks like Ray J's dick</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">56. This blunt got veins pumping through it</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">57. This blunt curve right at the tip</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">58. This blunt looks like it's been pushed out</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">59. This blunt has a family somewhere worried as hell</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">60. This blunt feels like a solid, fibrous piece of shit, straight up</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">61. The zaza got me connecting the dots</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">62. There are bugs under my skin, I need to dig them out with a screwdriver</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">63. She broke my heart, had me shadowboxing behind the 7-Eleven in my 2005 Cleveland LeBron Jersey, Zara jeans, and some LRG shoesWindows tinted, listening to Tee Grizzley,</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">64. Smoking on a goon rock</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">65. The bugs are back</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">67. I'm smoking on pussy slaw</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">68. The worms in my head won't shut the hell up</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">69. They're telling me to go absolutely fucking stupid on 'em</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">70. I don't even need to brandish the nine</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">71. I'm pissing and drooling all over myself howling and itching to take lives</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">72. Shit, I'm so excited to take lives, I'm literally covered in caca le shitty boy michi</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">73. I can't even take care of myself when I think about this shit</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">74. Smoking a real nuclear shit submarine I got this shit figured out</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">75. Smoked a seven gram backwood of shadow whisperer</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">76. Shit had me fucked up in the crib looking up pictures of dogs with human eyes</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">77. I got inter-dimensional demons dropping the pin as we speak they'll take anyone back over there</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">78. Unholy doses of Percocet and Hennessy got me shitting in the bed more than the Oakland A's</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">79. I'm back to back with God, shaking the fucking universe</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">80. Beat his ass and sent him into an improvement cycle he look like Bandman Kevo now</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">81. This zah feel like heroin, this heroin feel like zah</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">82. Flashed it at the parking lot in the Lenox mall with the serial number scratched out and everything</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">83. Threw the opp into the particle collider, watched his ass get pulled apart into a million pieces</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">84. Turned his sorry ass into some data</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">85. Stuffed her booty hole with some Sour Diesel and sent her on her way</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">86. That little flesh canoe got a mesquite vibe to it perhaps an apple or cherry wood smoke</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">87. She took a chance and spread it for a Nebraska dollar</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">88. She had a whole speakeasy behind those meat curtains</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">89. The pussy has its own time signature</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">90. Ring so heavy I can't answer the phone</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">91. That pussy tighter than the bulletproof counter window at a White Castle</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">92. How can I be gay? My bitch is homophobic, haha!</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">93. 58% THC pre-rolled joints rolled in keef had me reading the book of Revelations we are indeed close</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">94. I bought her Chanel bags until there was nothing left in her eyes</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">95. I'm at Magic City moving like the government</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">96. I fucked her with my AND1 shoes on and some Dada shorts</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">97. I'm a high functioning shooter</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">98. Yeah, I'm big on astrology i'm always looking at a fat dirt star every chance I get</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">99. I'm off a rhino pill ready to get my rocks off</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">100. My watch cost 50 bands and I still don't have time for you fuckboys</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">101. Pussy clot</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">102. The casualties you will suffer trying to fuck with me will have you thinking like Magnus Carlson</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">103. Rome wasn't built in a day but this 9mm certainly was</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">104. Just finished on my own stomach, time for some oxtail</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">105. We smoking eucalyptus pigeon shit</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">106. Gave her a venti of cum with two pumps of Dracu-nut</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">107. This chopped cheese is from Red Hook </a></li>
+            <li><a href="#" class="popup-trigger" data-text="">108. This Glock was 3D printed in Bangladesh</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">109. I'm posted up at the crib-o with three bitches, feasting on some Nicaraguan nose nachos, while listening to Rich Amiri i'm a real glutton</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">110. Went to O-Block and nobody ever heard of you, slime</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">111. Motherfucker, these are not Rururemons, these are Chrome Hearts</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">112. I'm smoking that Rasputin "Hear ye! Hear ye!" Durban Poison</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">113. I come from a low frequency environment, and I've only used cash my entire life</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">114. Poured up with Famous Dex, started doing the nod walk</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">115. The zaza got me acting inconsiderate</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">116. Give me a mattress and a fleshlight, I'll thrive anywhere</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">117. I wept for there were no worlds left to conquer</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">118. I was at the Battle of Jericho taunting both sides with my cock out</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">119. The 12 thousand year old jenkem so old it doesn't even smell no more</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">120. Smoking zaza like I don't believe in myself</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">121. They call me Ben Simmons cuz I don't play at all</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">122. Helped myself and went fuckin' nuts on the fifi, don't mind if I do</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">123. Pistol built like Dave Portnoy</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">124. My character is so flawed, the only time I ever stood 10 toes on anything, was on the opp's throat</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">125. I was one of nine babies abandoned in the bando</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">126. I'm moving like Meek Mill</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">127. Shorty's head built like the Warner Brothers logo</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">128. Chewing on the labia for 6 hours like a steak from Cracker Barrel</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">129. I'll rub my own nut all over the Glock to let them know I really been here</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">130. If my skull wasn't made out of titanium, I'd kill myself</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">131. We smoking bile</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">132. Lil bro greened out off the cart the other day and thought I was Sammy Sosa</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">133. I'm freebasing Excedrin, pouring my soul into the game</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">134. When everyone gave up on the block, I didn't hesitate to start selling my balls, booty, and dick</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">135. Enjoyed me some nice steamy opp gumbo</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">136. I'm in Myrtle Beach scraping rust off the fuckin' frogs, losing my goddamn mind</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">137. I'm in the Mariana Trench smoking submersibles</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">138. I had to put the poppers down cuz it was really moving the needle i'm moving the needle</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">139. I keep on pumping until the viscosity is just right</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">140. Put a switch on the Glock, this motherfucker sound like a Beyblade</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">141. That perc eating my ass up they don't call it a Scat Pack for no reason</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">142. I got the drum on me, I'm 'bout to make a fuckin beat</a></li>
+            <li><a href="#" class="popup-trigger" data-text="">143. I'm a fucking junkie cannibal, all I wanna do is sip mud and eat my opps</a></li>
+            <!-- Add more phrases -->
+        </ul>
+        <hr class="divider">
+        <footer class="footer">
+            <p>dracula flow 5 Copyright 2023.</p>
+            <p>No claim to copyright ownership is made to underlying materials
+            originating with PLUMMCORP RECORDS , including dracula flow 1-5</p> 
+            <p>Important: Please review the legal disclaimer and feedback page</p>
+        </footer>
+    </div>
+    <!-- Repeat for other episodes -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

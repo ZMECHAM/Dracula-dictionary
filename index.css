@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+    color: #00bcd4;
+}
+
+/* For small screens */
+.navbar-toggle {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+/* Hover effect for links */
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Change the background on hover */
+.navbar-links li a:hover {
+    background-color: #7b1414;
+    color: white;
+}
+
+/* Active link style */
+.navbar-links li a.active {
+    background-color: #ff4081;
+    color: white;
+}
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+.episodes {
+    display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align to the left */
+  width: 150px; /* Width of the sidebar */
+  background-color: #333; /* Dark background for Dracula theme */
+  color: white;
+  height: 100vh; /* Full height of the viewport */
+  padding: 10px 0;
+}
+
+.episode {
+    flex: 1;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.episode:hover {
+    background-color: #7b1414;
+    
+}
+
+.episode-list {
+    text-align: center;
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.episode-list ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.episode-list li {
+    margin-bottom: 10px;
+}
+
+.episode-list a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.episode-list a:hover {
+    color: #00bcd4;
+}
+.footer {
+
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.4; /* Adjusts text spacing */
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ccc; /* Optional: line above footer */
+}
+
+.footer p {
+    margin: 0; /* Removes the default margin between <p> tags */
+    padding: 0; /* Removes any padding applied to the <p> tags */
+}
+.divider {
+    border: none;             /* Removes the default styling */
+    border-top: 2px solid #ccc; /* Thin line with subtle color */
+    margin: 20px auto;         /* Adds spacing around the line */
+    width: 80%;                /* Makes the line shorter than the container */
+}
+ Popup container
+ 
+ #popup {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position on screen */
+    top: 50%; /* Vertically center the popup */
+    left: 50%; /* Horizontally center the popup */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Optional rounded corners */
+    z-index: 1000; /* Make sure the popup appears above other content */
+}
+
+
+
+/* Popup container */
+#popup {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position on screen */
+    top: 50%; /* Vertically center the popup */
+    left: 50%; /* Horizontally center the popup */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    padding: 20px; /* Padding around the content */
+    border-radius: 5px; /* Optional rounded corners */
+    z-index: 1000; /* Ensure it appears above other elements */
+    max-width: 400px; /* Limit popup width */
+    width: 100%; /* Make it responsive */
+}
+
+/* Popup text content */
+#popup-text {
+    font-size: 18px; /* Text size */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the text */
+    text-align: center; /* Center-align the text */
+}
+
+/* Popup content styles */
+.popup-content {
+    position: relative; /* Ensure the close button is positioned relative to this */
+    padding: 20px; /* Optional padding for the content */
+    background-color: white; /* Popup background */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid rgb(212, 212, 212);
+    max-width: 400px; /* Optional max width for*/
+}
+
+
+/* Close button for the popup */
+.close-btn {
+    position: absolute; /* Position within the popup */
+    top: 10px; /* Space from the top */
+    right: 10px; /* Space from the right */
+    font-size: 18px; /* Button size */
+    font-weight: bold; /* Bold for visibility */
+    color: #333; /* Dark text color */
+    cursor: pointer; /* Pointer cursor for clickable elements */
+    background: none; /* No background for the button */
+    border: none; /* Remove borders */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: red; /* Change color to red on hover */
+}
+
+/* Show the popup */
+#popup.show {
+    display: block; /* Make it visible */
+}
+
+/* Optional: Add styles for overlay if needed */
+.popup-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    z-index: 999; /* Below the popup */
+}
+
+.popup-overlay.show {
+    display: block; /* Show overlay when popup is active */
+}
+.hidden {
+    display: none; /* Hide the container by default */
+  }
+  
+  #toggle-columns-button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #toggle-columns-button:hover {
+    background-color: #555;
+  }
